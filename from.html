@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donation Form</title>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        margin:20px;
+    }
+    .container{
+        max-width:900px;
+        margin:auto;
+        background:#fff;
+        padding:20px;
+        border-radius:5px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    h2{
+        color:red;
+        margin-top:20px;
+    }
+    table{
+        width:100%;
+    }
+    td{
+        padding:5px;
+        vertical-align:top;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea{
+        width:100%;
+        padding:6px;
+        box-sizing:border-box;
+    }
+    textarea{
+        height:100px;
+    }
+    .buttons{
+        margin-top:20px;
+    }
+    button{
+        padding:8px 20px;
+        margin-right:10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<p><b>*</b> Denotes Required Information</p>
+
+<h2>Donor Information</h2>
+
+<table>
+<tr>
+    <td>First Name *</td>
+    <td><input type="text" required></td>
+</tr>
+<tr>
+    <td>Last Name *</td>
+    <td><input type="text" required></td>
+</tr>
+<tr>
+    <td>Company</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>Address 1 *</td>
+    <td><input type="text" required></td>
+</tr>
+<tr>
+    <td>Address 2</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>City *</td>
+    <td><input type="text" required></td>
+</tr>
+<tr>
+    <td>State *</td>
+    <td>
+        <select required>
+            <option>Select a State</option>
+            <option>California</option>
+            <option>Texas</option>
+            <option>New York</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>Zip Code *</td>
+    <td><input type="text" required></td>
+</tr>
+<tr>
+    <td>Country *</td>
+    <td>
+        <select required>
+            <option>Select a Country</option>
+            <option>Bangladesh</option>
+            <option>USA</option>
+            <option>Canada</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>Phone</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>Fax</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>Email *</td>
+    <td><input type="email" required></td>
+</tr>
+</table>
+
+<h3>Donation Amount *</h3>
+
+<label><input type="radio" name="amount"> None</label>
+<label><input type="radio" name="amount"> $50</label>
+<label><input type="radio" name="amount"> $75</label>
+<label><input type="radio" name="amount"> $100</label>
+<label><input type="radio" name="amount"> $250</label>
+<label><input type="radio" name="amount"> Other</label>
+
+<br><br>
+
+<label>Other Amount $</label>
+<input type="number">
+
+<br><br>
+
+<label>
+<input type="checkbox">
+I am interested in giving on a regular basis.
+</label>
+
+<br><br>
+
+Monthly Credit Card $
+<input type="number" style="width:120px;">
+For
+<input type="number" style="width:80px;">
+Months
+
+<h2>Honorarium and Memorial Donation Information</h2>
+
+<label>
+<input type="radio" name="donationType">
+To Honor
+</label>
+
+<label>
+<input type="radio" name="donationType">
+In Memory Of
+</label>
+
+<table>
+<tr>
+    <td>Name</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>Acknowledge Donation To</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>Address</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>City</td>
+    <td><input type="text"></td>
+</tr>
+<tr>
+    <td>State</td>
+    <td>
+        <select>
+            <option>Select a State</option>
+        </select>
+    </td>
+</tr>
+<tr>
+    <td>Zip</td>
+    <td><input type="text"></td>
+</tr>
+</table>
+
+<h2>Additional Information</h2>
+
+<label>Name</label>
+<input type="text">
+
+<br><br>
+
+<label>
+<input type="checkbox">
+I would like my gift to remain anonymous.
+</label><br>
+
+<label>
+<input type="checkbox">
+My employer offers a matching gift program.
+</label><br>
+
+<label>
+<input type="checkbox">
+Please save the cost of acknowledging this gift.
+</label>
+
+<br><br>
+
+<label>Comments</label>
+<textarea></textarea>
+
+<br><br>
+
+<h3>How may we contact you?</h3>
+
+<label><input type="checkbox"> E-mail</label><br>
+<label><input type="checkbox"> Postal Mail</label><br>
+<label><input type="checkbox"> Telephone</label><br>
+<label><input type="checkbox"> Fax</label>
+
+<br><br>
+
+<h3>Receive newsletters by:</h3>
+
+<label><input type="checkbox"> E-mail</label><br>
+<label><input type="checkbox"> Postal Mail</label>
+
+<br><br>
+
+<label>
+<input type="checkbox">
+I would like information about volunteering.
+</label>
+
+<div class="buttons">
+    <button type="reset">Reset</button>
+    <button type="submit">Continue</button>
+</div>
+
+</div>
+
+</body>
+</html>
